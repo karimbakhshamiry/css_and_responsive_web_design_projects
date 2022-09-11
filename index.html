@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects</title>
+    <style>
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 2em;
+      }
+
+      a {
+        /* display: block; */
+        font-size: 1.2rem;
+        color: black;
+        line-height: 1.5;
+        text-decoration: none;
+        position: relative;
+      }
+
+      a:hover::after {
+        content: "";
+        position: absolute;
+        height: 2px;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        background-color: black;
+        animation: extend;
+        animation-duration: 1s;
+        animation-timing-function: cubic-bezier(0.47, 0, 0.745, 0.715);
+      }
+
+      @keyframes extend {
+        0% {
+          width: 0%;
+        }
+
+        100% {
+          width: 100%;
+        }
+      }
+      a:hover {
+        opacity: 0.5;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <a href="./portfolio/index.html">Portfolio</a>
+        <a href="./adminPanel/index.html">Admin Panel</a>
+        <a href="./bbq_master/index.html">BBQ Master</a>
+        <a href="./carousal/index.html">Carousal</a>
+        <a href="./dice_game/index.html">Dice Game</a>
+        <a href="./invoice_creator/index.html">Invoice Creator</a>
+        <a href="./modal/index.html">Modal</a>
+        <a href="./NFTSite/index.html">NFT Site</a>
+        <a href="./oldogram/index.html">Oldogram</a>
+        <a href="./passenger_counter/index.html">Passenger Counter</a>
+        <a href="./rubicks/index.html">Rubicks Cube Tutorial</a>
+        <a href="./search_bar/index.html">Search</a>
+        <a href="./simple_life/index.html">Simple Life Blog</a>
+      </div>
+    </main>
+  </body>
+</html>

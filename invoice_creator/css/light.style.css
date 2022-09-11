@@ -1,0 +1,137 @@
+body {
+    margin: 0px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #8d90a7;
+    font-weight: bold;
+}
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+
+}
+
+header p {
+    font-size: 80%;
+    color: #8d90a7;
+}
+
+header {
+    background-color: #f5f5f5;
+    color: #000;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+main {
+    background-color: #fff;
+    padding: 40px 10px;
+}
+
+.columns {
+    display: flex;
+    justify-content: center;
+}
+
+#task, #notes{
+    text-align: left;
+    width: 80%;
+}
+
+#total, #total-info {
+    text-align: right;
+    width: 20%;
+}
+
+.info {
+    font-size: 10px;
+    color: #92909d;
+    height: 40px;
+}
+
+.message{
+    font-weight: normal;
+}
+#task p, #total p {
+    color: #534f4f;
+    font-size: 15px;
+}
+
+.gray-text {
+    color: #92909d;
+    font-weight: normal;
+}
+#send-invoice {
+    width: 100%;
+    padding: 10px 0px;
+    box-sizing: border-box;
+    font-weight: bold;
+    color: white;
+    background-color: #3670ed;
+    border: 1px solid #3670ed;
+    border-radius: 10px;
+}
+
+.services-btn {
+    color: #534f4f;
+    font-weight: bold;
+    font-size: 80%;
+    margin: 10px;
+    padding: 15px 15px;
+    background-color: white;
+    border: 1px solid #92909d;
+    border-radius: 5px;
+}
+
+button:hover {
+    border: 1px solid black;
+    color: black;
+    box-shadow: 0px 0px 20px black;
+}
+
+#send-invoice:hover{
+    background-color: #467cf1;
+    box-shadow: none;
+}
+#total-amount {
+    font-size: 30px;
+    margin: 0px;
+}
+
+.remove {
+    font-size: 40%;
+    margin: 0px 20px;
+    color: #92909d;
+    text-decoration: underline;
+}
+
+.remove:hover{
+    cursor: pointer;
+    color: black;
+}
+
+#dark-light-mode:hover {
+    box-shadow: none;
+}
+
+#dark-light-mode:hover {
+    border: 1px solid #fff;
+    color: #fff;
+    box-shadow: 0px 0px 20px #000;
+    background-color: #3670ed;
+    border: 1px solid #92909d;
+    cursor: pointer;
+}
+
+#dark-light-mode {
+    background-color: #fff;
+    width: 20%;
+    margin: 0 auto;
+    border: 1px solid #92909d;
+    padding: 10px 10px;
+    font-weight: bold;
+    color: #92909d;
+    box-sizing: border-box;
+    border-radius: 5px;
+}

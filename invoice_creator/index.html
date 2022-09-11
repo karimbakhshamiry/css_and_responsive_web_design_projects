@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/light.style.css">
+    <title>Invoice Creator</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Invoice creator</h1>
+            <p class="message">Thanks for choosing GoodCorp, LLC!</p>
+            <p id="dark-light-mode" data-lightmode="false">Dark Mode</p>
+        </header>
+
+        <main>
+            <div class="columns">
+                <button id="wash-car" class="services-btn" data-service="Wash Car" data-cost="10">Wash Car: $10</button>
+                <button id="mow-lawn" class="services-btn" data-service="Mow Lawn" data-cost="20">Mow Lawn: $20</button>
+                <button id="pull-weeds" class="services-btn" data-service="Pull Weeds" data-cost="30">Pull Weeds: $30</button>
+                <button id="make-the-landscape" class="services-btn" data-service="Make the Landscape" data-cost="60">Make the Landscape: $60</button>
+            </div>
+            
+            <div class="columns" id="invoice-details">
+                <div id="task">
+                    <span class="info">
+                        TASK
+                    </span>
+                    <p data-value="Wash Car">Wash Car <span class="remove">Remove</span></p>
+                </div>
+                <div id="total">
+                    <span class="info">
+                        TOTAL
+                    </span>
+                    <p><span class="gray-text">$</span>10</p>
+                </div>
+            </div>
+            <hr>
+
+            <div class="columns">
+                <div id="notes">
+                    <span class="info">
+                        NOTES
+                    </span>
+                    <p class="info message">We accept cash, credit, or PayPal</p>
+                </div>
+
+                <div id="total-info">
+                    <span class="info">
+                        TOTAL AMOUNT
+                    </span>
+                    <p id="total-amount">
+                        $0
+                    </p>
+                </div>
+            </div>
+
+            <button id="send-invoice">Send invoice</button>
+        </main>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+</html>
